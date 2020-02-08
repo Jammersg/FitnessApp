@@ -35,7 +35,12 @@ public class Menu {
 			"Delete Instructor",
 			"Add New Instrcutor");
 	
+<<<<<<< HEAD
+
+	public void start() throws SQLException {
+=======
 	public void start() throws SQLException, ParseException {
+>>>>>>> 6cd25c223037272f8411fafccded9dd4b3442cd3
 		String selection = "";
 		
 		do {

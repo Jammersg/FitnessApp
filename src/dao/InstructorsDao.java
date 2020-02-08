@@ -15,7 +15,14 @@ public class InstructorsDao {
 
 	private Connection connection = DBConnector.getConnection();
 
+<<<<<<< HEAD
+	
+	
+	
+
+=======
 	private String GET_INSTRUCTORS = "SELECT * FROM instructors";
+>>>>>>> 6cd25c223037272f8411fafccded9dd4b3442cd3
 	private final  String NEW_INSTRUCTOR = "Insert into food(instructor_FN, instructor_LN, classes_taught, pay_rate)" +
 			"values(?,?,?,?)";
 	private String UPDATE_PAY = "update instructors set pay_rate = ? where instructor_ID = ?";
@@ -48,6 +55,11 @@ public class InstructorsDao {
 		return populateInstructor(instructor_ID, instructor_FN, instructor_LN, classes_taught, pay_rate);
 	}
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 6cd25c223037272f8411fafccded9dd4b3442cd3
 	
 	public void updatePay(int instructor_ID, double pay_rate) throws SQLException {
 		PreparedStatement ps = connection.prepareStatement(UPDATE_PAY);
